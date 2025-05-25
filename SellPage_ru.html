@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Продавть Авто</title>
+  <link href="src/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="sell-page">
+  <header class="header">
+    <div class="container">
+      <div class="languages">
+        <a href="SellPage_en.html">En</a>
+        <a href="SellPage_ru.html" class="active">Ru</a>
+        <a href="SellPage.html">Lv</a>
+      </div>
+      <nav class="nav__menu">
+        <ul class="nav__item">
+          <li><a href="index_ru.html" class="nav__link" onclick="">Домашняя страница</a></li>
+          <li><a href="information_ru.html" class="nav__link">Информация</a></li>
+          <li><a href="BuyPage_ru.html" class="nav__link">Поиск</a></li>
+          <li><a href="about_ru.html" class="nav__link">О нас</a></li>
+          <li><a href="#" class="openLogin" id="openLogin">Авторизоваться</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="sell-car-section">
+    <div class="container">
+      <div class="form-container">
+        <h1>Продавть Авто</h1>
+        <form action="" method="POST">
+          <div class="form-group">
+            <label for="announcement-title">Название Объявления</label>
+            <input type="text" id="announcement-title" name="announcement-title" placeholder="Укажите Название Объявления" required>
+          </div>
+          <div class="form-group">
+            <label for="make">Марка</label>
+            <input type="text" id="make" name="make" placeholder="Укажите Марку" required>
+          </div>
+          <div class="form-group">
+            <label for="model">Модель</label>
+            <input type="text" id="model" name="model" placeholder="Укажите Модель" required>
+          </div>
+          <div class="form-group">
+            <label for="year">Год Выпуска</label>
+            <input type="number" id="year" name="year" placeholder="Укажите Год Выпуска" required>
+          </div>
+          <div class="form-group">
+            <label for="engine-volume">Объем Двигателя</label>
+            <input type="text" id="engine-volume" name="engine-volume" placeholder="Укажите Объем Двигателя" required>
+          </div>
+          <div class="form-group">
+            <label for="engine-power">Мощность Двигателя (Kw)</label>
+            <input type="number" id="engine-power" name="engine-power" placeholder="Укажите Мощность Двигателя (Kw)" required>
+          </div>
+          <div class="form-group">
+            <label for="color">Цвет</label>
+            <input type="text" id="color" name="color" placeholder="Укажите Цвет" required>
+          </div>
+          <div class="form-group">
+            <label for="doors">Число Дверей</label>
+            <input type="number" id="doors" name="doors" placeholder="Укажите число дверей" required>
+          </div>
+          <div class="form-group">
+            <label for="condition">Состояние</label>
+            <input type="text" id="condition" name="condition" placeholder="Укажите Состояние" required>
+          </div>
+          <div class="form-group">
+            <label for="price">Цена (€)</label>
+            <input type="number" id="price" name="price" placeholder="Укажите Цену" required>
+          </div>
+          <div class="form-group">
+            <label for="mileage">Пробег (Км)</label>
+            <input type="number" id="mileage" name="mileage" placeholder="Укажите Пробег (Kм)" required>
+          </div>
+          <div class="form-group">
+            <label for="fuel-type">Тип Топлива</label>
+            <input type="text" id="fuel-type" name="fuel-type" placeholder="Укажите Тип Топлива" required>
+          </div>
+          <div class="form-group">
+            <label for="transmission">Транмиссия</label>
+            <input type="text" id="transmission" name="transmission" placeholder="Укажите Тип Трансмиссии" required>
+          </div>
+          <div class="form-group">
+            <label for="drive-type">Привод</label>
+            <input type="text" id="drive-type" name="drive-type" placeholder="Укажите Тип Привода" required>
+          </div>
+          <div class="form-group">
+            <label for="inspection-date">Технический Осмотр</label>
+            <input type="date" id="inspection-date" name="inspection-date" lang="lv" required>
+          </div>
+          <div class="form-group">
+            <label for="vin">VIN Код</label>
+            <input type="text" id="vin" name="vin" placeholder="Укажите VIN Код" required>
+          </div>
+          <div class="form-group">
+            <label for="city">Город</label>
+            <input type="text" id="city" name="city" placeholder="Укажите Город" required>
+          </div>
+          <div class="form-group">
+            <label for="publish-date">Дата Публикации</label>
+            <input type="date" id="publish-date" name="publish-date" lang="lv" required>
+          </div>
+          <div class="form-group">
+            <label for="expiry-date">Дата истечения срока действия публикации</label>
+            <input type="date" id="expiry-date" name="expiry-date" lang="lv" required>
+          </div>
+          <div class="form-group">
+            <label for="ad-status">Статус Объявления</label>
+            <select id="ad-status" name="ad-status" required>
+              <option value="active">Активный</option>
+              <option value="inactive">Неактивный</option>
+            </select>
+          </div>
+          <button type="submit" class="submit-button">Опубликовать</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="src/main.js"></script>
+</body>
+</html>

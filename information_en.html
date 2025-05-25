@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="src/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<header class="header">
+  <div class="container">
+    <div class="languages">
+      <a href="information_en.html">En</a>
+      <a href="information_ru.html">Ru</a>
+      <a href="information_lv.html" class="active">Lv</a>
+    </div>
+    <nav class="nav__menu">
+      <ul class="nav__item">
+        <li><a href="index_en.html" class="nav__link" onclick="">Home</a></li>
+        <li><a href="information_en.html" class="nav__link">Information</a></li>
+        <li><a href="BuyPage_en.html" class="nav__link">Search</a></li>
+        <li><a href="about_en.html" class="nav__link">About Us</a></li>
+        <li><a href="#" class="openLogin" id="openLogin">Login</a></li>
+        <li><img src="src/images/login.png" alt="login" class="loginIcon"></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="container">
+  <h1 class="main-title">CarVibe information</h1>
+  <p class="main-text">
+    Carvibe is a state-of-the-art platform that offers convenient solutions for car searching and sales.
+    Our goal is to make car sales simple and accessible to everyone.
+  </p>
+
+  <h2 class="section-title">Our offerings</h2>
+  <ul class="main-list">
+    <li>Search for cars based on a variety of criteria, such as brand, model, or price.</li>
+    <li>Add your car for sale with details and pictures.</li>
+    <li>Access useful information and tips on buying and selling cars.</li>
+  </ul>
+
+  <h2 class="section-title">News and updates</h2>
+  <p class="main-text">The carvibe platform is regularly upgraded to provide the best experience of use. Some of the latest updates:</p>
+  <ul class="main-list">
+    <li>An improved search tool that helps you find relevant cars faster and more accurately.</li>
+    <li>The ability to upload high-quality images to your sales ads.</li>
+    <li>Additional information and guides for new users.</li>
+  </ul>
+
+
+
+  <h2 class="section-title">Contact us</h2>
+  <p class="main-text">
+    If you have any questions or suggestions, please contact us via
+    <a href="about_lv.html" class="main-link">contacts section</a>.
+  </p>
+</div>
+</main>
+
+
+
+<script src="src/main.js"></script>
+</body>
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>CarVibe</h2>
+    <form id="loginForm" class="loginForm">
+      <label for="username">Email / Username:</label>
+      <input type="text" placeholder="Enter your email or username" id="username" name="username" required>
+      <label for="password">Password:</label>
+      <input type="password" placeholder="Enter your password" id="password" name="password" required>
+      <button type="submit">Log In</button>
+      <button type="submit">Register</button>
+    </form>
+  </div>
+</div>
+
+</html>

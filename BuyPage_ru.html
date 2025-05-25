@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Meklēt mašīnu</title>
+  <link href="src/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="buy-page">
+  <header class="header">
+    <div class="container">
+      <div class="languages">
+        <a href="BuyPage_en.html">En</a>
+        <a href="BuyPage_ru.html" class="active">Ru</a>
+        <a href="BuyPage.html">Lv</a>
+      </div>
+      <nav class="nav__menu">
+        <ul class="nav__item">
+          <li><a href="index_ru.html" class="nav__link" onclick="">Домашняя страница</a></li>
+          <li><a href="information_ru.html" class="nav__link">Информация</a></li>
+          <li><a href="BuyPage_ru.html" class="nav__link">Поиск</a></li>
+          <li><a href="about_ru.html" class="nav__link">О нас</a></li>
+          <li><a href="#" class="openLogin" id="openLogin">Авторизоваться</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="search-car-section">
+
+    <div class="container">
+      <div class="Cards">
+      <!-- Car Gallery and Navigation -->
+      <div class="car-gallery">
+        <div class="GalleryCar">
+          <img src="src/images/Golf7attels.jpg" alt="Auto" class="active">
+          <img src="src/images/golf7.2.jpeg" alt="Auto">
+          <img src="src/images/golf7.3.jpg" alt="Auto">
+          <div class="controls">
+            <button id="prev-btn">&larr;</button>
+            <button id="next-btn">&rarr;</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Car Info (Text on the right) -->
+      <div class="car-info">
+        <div class="info">
+          <h1>Volkswagen Golf MK7 GTI</h1>
+          <p><strong>Марка:</strong> Volkswagen</p>
+          <p><strong>Модель:</strong> Golf MK7 GTI</p>
+          <p><strong>Год Выпуска:</strong> 2015</p>
+          <p><strong>Объем Двигателя:</strong> 2.0 L</p>
+          <p><strong>Мощность Двигателя (Kw):</strong> 169 kW</p>
+          <p><strong>Цвет:</strong> Красный</p>
+          <p><strong>Число Дверей:</strong> 3</p>
+          <p><strong>Состояние:</strong> Мало Использовался</p>
+          <p><strong>Цена:</strong> 15,000 €</p>
+          <p><strong>Пробег:</strong> 25,000 Km</p>
+          <p><strong>Тип Топлива:</strong> Бензин</p>
+          <p><strong>Транмиссия:</strong> Автомат</p>
+          <p><strong>Привод:</strong> Передний привод</p>
+          <p><strong>Технический Осмотр:</strong> 02.12.2026</p>
+          <p><strong>VIN Код:</strong> VW892742234</p>
+          <p><strong>Город:</strong> Таллин</p>
+        </div>
+        <div class="status">
+          <p><strong>Дата Публикации:</strong> 09.10.2024</p>
+          <p><strong>Дата истечения срока действия публикации:</strong> 09.12.2024</p>
+          <p><strong>Статус Объявления:</strong> Активный</p>
+        </div>
+        <button class="welcome__button">Связаться с Продавцом</button>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <script src="src/main.js"></script>
+
+  <script>
+    // Gallery Image Navigation Script
+    const images = document.querySelectorAll('.GalleryCar img');
+    let currentImageIndex = 0;
+
+    const prevButton = document.getElementById('prev-btn');
+    const nextButton = document.getElementById('next-btn');
+
+    function changeImage() {
+      images.forEach((img, index) => {
+        img.classList.remove('active');
+        if (index === currentImageIndex) {
+          img.classList.add('active');
+        }
+      });
+    }
+
+    prevButton.addEventListener('click', function () {
+      currentImageIndex = (currentImageIndex === 0) ? images.length - 1 : currentImageIndex - 1;
+      changeImage();
+    });
+
+    nextButton.addEventListener('click', function () {
+      currentImageIndex = (currentImageIndex === images.length - 1) ? 0 : currentImageIndex + 1;
+      changeImage();
+    });
+
+    changeImage();
+  </script>
+</body>
+</html>

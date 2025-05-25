@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="src/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<header class="header">
+  <div class="container">
+    <div class="languages">
+      <a href="index_en.html">En</a>
+      <a href="index_ru.html">Ru</a>
+      <a href="index.html" class="active">Lv</a>
+    </div>
+    <nav class="nav__menu">
+      <ul class="nav__item">
+        <li><a href="index_ru.html" class="nav__link" onclick="">Домашняя страница</a></li>
+        <li><a href="information_ru.html" class="nav__link">Информация</a></li>
+        <li><a href="BuyPage_ru.html" class="nav__link">Поиск</a></li>
+        <li><a href="about_ru.html" class="nav__link">О нас</a></li>
+        <li><a href="#" class="openLogin" id="openLogin">Авторизоваться</a></li>
+        <li><img src="src/images/login.png" alt="login" class="loginIcon"></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<section class="welcome__section">
+  <div class="container">
+    <div class="welcome__content">
+      <div class="welcome__card">
+        <img src="src/images/car2.png" alt="" class="welcome__img">
+        <div class="welcome__card__text">
+          <h1 class="welcome__head-name1">Искать Авто</h1>
+          <div class="welcome__button__container">
+            <a href="BuyPage_ru.html" class="welcome__button">Искать</a>
+          </div>
+        </div>
+      </div>
+      <div class="welcome__card">
+        <img src="src/images/car.png" alt="" class="welcome__img__2">
+        <div class="welcome__card__text">
+          <h1 class="welcome__head-name2">Продать Авто</h1>
+          <div class="welcome__button__container">
+            <a href="SellPage_ru.html" class="welcome__button">Продать</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>CarVibe</h2>
+    <form id="loginForm" class="loginForm">
+      <label for="username">Почта / Имя пользователя:</label>
+      <input type="text" placeholder="Ievadi savu e-pastu vai lietotājvārdu" id="username" name="username" required>
+      <label for="password">Пароль:</label>
+      <input type="password" placeholder="Ievadi savu paroli" id="password" name="password" required>
+      <button type="submit">Войти</button>
+      <button type="submit">Зарегестрироваться</button>
+    </form>
+  </div>
+</div>
+
+<script src="src/main.js"></script>
+</body>
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>CarVibe</h2>
+    <form id="loginForm" class="loginForm">
+      <label for="username">Электронная почта / Логин:</label>
+      <input type="text" placeholder="Введите ваш email или логин" id="username" name="username" required>
+      <label for="password">Пароль:</label>
+      <input type="password" placeholder="Введите ваш пароль" id="password" name="password" required>
+      <button type="submit">Войти</button>
+      <button type="submit">Зарегистрироваться</button>
+    </form>
+  </div>
+</div>
+
+</html>

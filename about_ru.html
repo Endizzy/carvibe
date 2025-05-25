@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="src/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<header class="header">
+  <div class="container">
+    <div class="languages">
+      <a href="about_en.html">En</a>
+      <a href="about_ru.html">Ru</a>
+      <a href="about_lv.html" class="active">Lv</a>
+    </div>
+    <nav class="nav__menu">
+      <ul class="nav__item">
+        <li><a href="index_ru.html" class="nav__link" onclick="">Домашняя страница</a></li>
+        <li><a href="information_ru.html" class="nav__link">Информация</a></li>
+        <li><a href="BuyPage_ru.html" class="nav__link">Поиск</a></li>
+        <li><a href="about_ru.html" class="nav__link">О нас</a></li>
+        <li><a href="#" class="openLogin" id="openLogin">Авторизоваться</a></li>
+        <li><img src="src/images/login.png" alt="login" class="loginIcon"></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="container">
+  <h1 class="main-title">О нашей команде</h1>
+  <p class="main-text">
+    Команда CarVibe состоит из профессионалов, которые объединяют свои знания и опыт для создания удобной и современной платформы для торговли автомобилями.
+    Наша миссия - упростить процесс покупки и продажи автомобилей с помощью технологий и инновационных решений.
+  </p>
+    <h2 class="section-title">Наша команда</h2>
+    <div class="team">
+      <!-- Участник команды 1 -->
+      <div class="team-member">
+        <img src="src/images/man.png" alt="Участник команды 1" class="team-image">
+        <h3 class="team-name">Андрей Соловьёв</h3>
+        <p class="team-role">Руководитель проекта</p>
+        <p class="team-description">
+          Андрей обеспечивает стратегическое направление проекта, координирует деятельность всей команды и следит за успешной реализацией проекта.
+        </p>
+      </div>
+      <!-- Участник команды 2 -->
+      <div class="team-member">
+        <img src="src/images/man (1).png" alt="Участник команды 2" class="team-image">
+        <h3 class="team-name">Никита Смирнов</h3>
+        <p class="team-role">Разработчик</p>
+        <p class="team-description">
+          Никита отвечает за техническую разработку и функциональность платформы, обеспечивая её бесперебойную работу.
+        </p>
+      </div>
+      <!-- Участник команды 3 -->
+      <div class="team-member">
+        <img src="src/images/man (2).png" alt="Участник команды 3" class="team-image">
+        <h3 class="team-name">Элина Парфёнова</h3>
+        <p class="team-role">Дизайнер</p>
+        <p class="team-description">
+          Элина отвечает за пользовательский опыт и визуальное оформление CarVibe, создавая привлекательный и удобный интерфейс.
+        </p>
+      </div>
+    </div>
+
+  <h2 class="section-title">Связаться с нами</h2>
+  <p class="main-text">
+    Если вы хотите узнать больше о нашей команде или проекте, пожалуйста, свяжитесь с нами через <a href="information_lv.html" class="main-link">раздел информации</a>.
+  </p>
+</div>
+</main>
+
+
+<script src="src/main.js"></script>
+</body>
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>CarVibe</h2>
+    <form id="loginForm" class="loginForm">
+      <label for="username">Электронная почта / Логин:</label>
+      <input type="text" placeholder="Введите ваш email или логин" id="username" name="username" required>
+      <label for="password">Пароль:</label>
+      <input type="password" placeholder="Введите ваш пароль" id="password" name="password" required>
+      <button type="submit">Войти</button>
+      <button type="submit">Зарегистрироваться</button>
+    </form>
+  </div>
+</div>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Pārdot mašīnu</title>
+  <link href="src/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="sell-page">
+  <header class="header">
+    <div class="container">
+      <div class="languages">
+        <a href="SellPage_en.html" class="active">En</a>
+        <a href="SellPage_ru.html">Ru</a>
+        <a href="SellPage.html">Lv</a>
+      </div>
+      <nav class="nav__menu">
+        <ul class="nav__item">
+          <li><a href="index_en.html" class="nav__link" onclick="">Home</a></li>
+          <li><a href="information_en.html" class="nav__link">Information</a></li>
+          <li><a href="BuyPage_en.html" class="nav__link">Search</a></li>
+          <li><a href="about_en.html" class="nav__link">About Us</a></li>
+          <li><a href="#" class="openLogin" id="openLogin">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="sell-car-section">
+    <div class="container">
+      <div class="form-container">
+        <h1>Sell Car</h1>
+        <form action="" method="POST">
+          <div class="form-group">
+            <label for="announcement-title">Ad Name</label>
+            <input type="text" id="announcement-title" name="announcement-title" placeholder="Enter the title of the ad" required>
+          </div>
+          <div class="form-group">
+            <label for="make">Mark</label>
+            <input type="text" id="make" name="make" placeholder="Enter the mark" required>
+          </div>
+          <div class="form-group">
+            <label for="model">Model</label>
+            <input type="text" id="model" name="model" placeholder="Enter the model" required>
+          </div>
+          <div class="form-group">
+            <label for="year">Release Year</label>
+            <input type="number" id="year" name="year" placeholder="Enter the Release Year" required>
+          </div>
+          <div class="form-group">
+            <label for="engine-volume">Engine Volume</label>
+            <input type="text" id="engine-volume" name="engine-volume" placeholder="Enter the Engine Volume" required>
+          </div>
+          <div class="form-group">
+            <label for="engine-power">Engine Power (Kw)</label>
+            <input type="number" id="engine-power" name="engine-power" placeholder="Enter the Engine Power (Kw)" required>
+          </div>
+          <div class="form-group">
+            <label for="color">Colour</label>
+            <input type="text" id="color" name="color" placeholder="Enter the Colour" required>
+          </div>
+          <div class="form-group">
+            <label for="doors">Door Number</label>
+            <input type="number" id="doors" name="doors" placeholder="Enter the Door Number" required>
+          </div>
+          <div class="form-group">
+            <label for="condition">Condition</label>
+            <input type="text" id="condition" name="condition" placeholder="Enter the Condition" required>
+          </div>
+          <div class="form-group">
+            <label for="price">Price (€)</label>
+            <input type="number" id="price" name="price" placeholder="Enter the Price" required>
+          </div>
+          <div class="form-group">
+            <label for="mileage">Mileage (Km)</label>
+            <input type="number" id="mileage" name="mileage" placeholder="Enter the Mileage (Km)" required>
+          </div>
+          <div class="form-group">
+            <label for="fuel-type">Type of Fuel</label>
+            <input type="text" id="fuel-type" name="fuel-type" placeholder="Enter the Type og Fuel" required>
+          </div>
+          <div class="form-group">
+            <label for="transmission">Gear Box Type</label>
+            <input type="text" id="transmission" name="transmission" placeholder="Enter the Gear Box Type" required>
+          </div>
+          <div class="form-group">
+            <label for="drive-type">Type of Drive</label>
+            <input type="text" id="drive-type" name="drive-type" placeholder="Enter the Type of Drive" required>
+          </div>
+          <div class="form-group">
+            <label for="inspection-date">Technical Inspection</label>
+            <input type="date" id="inspection-date" name="inspection-date" lang="lv" required>
+          </div>
+          <div class="form-group">
+            <label for="vin">VIN Code</label>
+            <input type="text" id="vin" name="vin" placeholder="Enter the VIN Code" required>
+          </div>
+          <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" placeholder="Enter the City" required>
+          </div>
+          <div class="form-group">
+            <label for="publish-date">Publication Date</label>
+            <input type="date" id="publish-date" name="publish-date" lang="lv" required>
+          </div>
+          <div class="form-group">
+            <label for="expiry-date">Expiry Date</label>
+            <input type="date" id="expiry-date" name="expiry-date" lang="lv" required>
+          </div>
+          <div class="form-group">
+            <label for="ad-status">Ad Status</label>
+            <select id="ad-status" name="ad-status" required>
+              <option value="active">Active</option>
+              <option value="inactive">Inactive</option>
+            </select>
+          </div>
+          <button type="submit" class="submit-button">Publish the Ad</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="src/main.js"></script>
+</body>
+</html>

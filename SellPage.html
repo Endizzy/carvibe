@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Pārdot mašīnu</title>
+  <link href="src/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="sell-page">
+  <header class="header">
+    <div class="container">
+      <div class="languages">
+        <a href="SellPage_en.html">En</a>
+        <a href="SellPage_ru.html">Ru</a>
+        <a href="SellPage.html" class="active">Lv</a>
+      </div>
+      <nav class="nav__menu">
+        <ul class="nav__item">
+          <li><a href="index.html" class="nav__link" onclick="">Sākumlapa</a></li>
+          <li><a href="information_lv.html" class="nav__link">Informacija</a></li>
+          <li><a href="BuyPage.html" class="nav__link">Meklēt</a></li>
+          <li><a href="about_lv.html" class="nav__link">Par mums</a></li>
+          <li><a href="#" class="openLogin" id="openLogin">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="sell-car-section">
+    <div class="container">
+      <div class="form-container">
+        <h1>Pārdot mašīnu</h1>
+        <form action="" method="POST">
+          <div class="form-group">
+            <label for="announcement-title">Nosaukums</label>
+            <input type="text" id="announcement-title" name="announcement-title" placeholder="Ievadiet sludinājuma nosaukumu" required>
+          </div>
+          <div class="form-group">
+            <label for="make">Marka</label>
+            <input type="text" id="make" name="make" placeholder="Ievadiet marku" required>
+          </div>
+          <div class="form-group">
+            <label for="model">Modelis</label>
+            <input type="text" id="model" name="model" placeholder="Ievadiet modeli" required>
+          </div>
+          <div class="form-group">
+            <label for="year">Izlaiduma gads</label>
+            <input type="number" id="year" name="year" placeholder="Ievadiet izlaiduma gadu" required>
+          </div>
+          <div class="form-group">
+            <label for="engine-volume">Dzinēja tilpums</label>
+            <input type="text" id="engine-volume" name="engine-volume" placeholder="Ievadiet dzinēja tilpumu" required>
+          </div>
+          <div class="form-group">
+            <label for="engine-power">Dzinēja jauda (Kw)</label>
+            <input type="number" id="engine-power" name="engine-power" placeholder="Ievadiet dzinēja jaudu" required>
+          </div>
+          <div class="form-group">
+            <label for="color">Krāsa</label>
+            <input type="text" id="color" name="color" placeholder="Ievadiet krāsu" required>
+          </div>
+          <div class="form-group">
+            <label for="doors">Durvju skaits</label>
+            <input type="number" id="doors" name="doors" placeholder="Ievadiet durvju skaitu" required>
+          </div>
+          <div class="form-group">
+            <label for="condition">Stāvoklis</label>
+            <input type="text" id="condition" name="condition" placeholder="Ievadiet stāvokli" required>
+          </div>
+          <div class="form-group">
+            <label for="price">Cena (€)</label>
+            <input type="number" id="price" name="price" placeholder="Ievadiet cenu" required>
+          </div>
+          <div class="form-group">
+            <label for="mileage">Nobraukums (Km)</label>
+            <input type="number" id="mileage" name="mileage" placeholder="Ievadiet nobraukumu" required>
+          </div>
+          <div class="form-group">
+            <label for="fuel-type">Degvielas veids</label>
+            <input type="text" id="fuel-type" name="fuel-type" placeholder="Ievadiet degvielas veidu" required>
+          </div>
+          <div class="form-group">
+            <label for="transmission">Pārnesumkārba</label>
+            <input type="text" id="transmission" name="transmission" placeholder="Ievadiet pārnesumkārbu" required>
+          </div>
+          <div class="form-group">
+            <label for="drive-type">Piedziņas veids</label>
+            <input type="text" id="drive-type" name="drive-type" placeholder="Ievadiet piedziņas veidu" required>
+          </div>
+          <div class="form-group">
+            <label for="inspection-date">Tehniskā apskate</label>
+            <input type="date" id="inspection-date" name="inspection-date" lang="lv" required>
+          </div>
+          <div class="form-group">
+            <label for="vin">VIN kods</label>
+            <input type="text" id="vin" name="vin" placeholder="Ievadiet VIN kodu" required>
+          </div>
+          <div class="form-group">
+            <label for="city">Pilsēta</label>
+            <input type="text" id="city" name="city" placeholder="Ievadiet pilsētu" required>
+          </div>
+          <div class="form-group">
+            <label for="publish-date">Publicēšanas datums</label>
+            <input type="date" id="publish-date" name="publish-date" lang="lv" required>
+          </div>
+          <div class="form-group">
+            <label for="expiry-date">Derīguma termiņš</label>
+            <input type="date" id="expiry-date" name="expiry-date" lang="lv" required>
+          </div>
+          <div class="form-group">
+            <label for="ad-status">Sludinājuma statuss</label>
+            <select id="ad-status" name="ad-status" required>
+              <option value="active">Aktīvs</option>
+              <option value="inactive">Neaktīvs</option>
+            </select>
+          </div>
+          <button type="submit" class="submit-button">Publicēt sludinājumu</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="src/main.js"></script>
+</body>
+</html>
